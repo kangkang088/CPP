@@ -1,15 +1,11 @@
 #include <iostream>
+#include <memory>
 
-struct Entity
+class Entity
 {
 public:
-	float X, Y;
-
 	Entity()
 	{
-		X = 0.0f;
-		Y = 0.0f;
-
 		std::cout << "Created Entity!" << std::endl;
 	}
 
@@ -20,20 +16,19 @@ public:
 
 	void Print()
 	{
-		std::cout << X << ", " << Y << std::endl;
 	}
 };
 
-void Function()
-{
-	Entity e;
-
-	e.Print();
-}
-
 int main()
 {
-	Function();
+	{
+		std::shared_ptr<Entity> e0;
+		{
+			std::shared_ptr<Entity> sharedEntity = std::make_shared<Entity>();
+
+			e0 = sharedEntity;
+		}
+	}
 
 	std::cin.get();
 }
