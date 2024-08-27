@@ -1,34 +1,15 @@
 #include <iostream>
 #include <memory>
 
-class Entity
+struct Vector3
 {
-public:
-	Entity()
-	{
-		std::cout << "Created Entity!" << std::endl;
-	}
-
-	~Entity()
-	{
-		std::cout << "Destroyed Entity!" << std::endl;
-	}
-
-	void Print()
-	{
-	}
+	float x, y, z;
 };
-
 int main()
 {
-	{
-		std::shared_ptr<Entity> e0;
-		{
-			std::shared_ptr<Entity> sharedEntity = std::make_shared<Entity>();
+	ScopedPtr entity = new Entity();
 
-			e0 = sharedEntity;
-		}
-	}
+	entity->Print();
 
 	std::cin.get();
 }
