@@ -1,15 +1,13 @@
 #include <iostream>
-#include <memory>
 
-struct Vector3
-{
-	float x, y, z;
-};
 int main()
 {
-	ScopedPtr entity = new Entity();
+	int** a2d = new int* [50];
 
-	entity->Print();
+	for (int i = 0; i < 50; i++)
+	{
+		a2d[i] = new int[50];
+	}
 
 	std::cin.get();
 }
