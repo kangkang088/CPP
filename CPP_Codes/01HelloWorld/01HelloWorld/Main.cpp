@@ -1,13 +1,38 @@
 #include <iostream>
 
+class Base
+{
+public:
+	Base()
+	{
+		std::cout << "Base Constructor\n";
+	}
+	virtual ~Base()
+	{
+		std::cout << "Base Destructor\n";
+	}
+};
+
+class Derived :public Base
+{
+public:
+	Derived()
+	{
+		std::cout << "Derived Constructor\n";
+	}
+	~Derived()
+	{
+		std::cout << "Derived Destructor\n";
+	}
+};
+
 int main()
 {
-	int** a2d = new int* [50];
+	Base* base = new Base();
+	delete base;
 
-	for (int i = 0; i < 50; i++)
-	{
-		a2d[i] = new int[50];
-	}
+	Base* derived = new Derived();
+	delete derived;
 
 	std::cin.get();
 }
