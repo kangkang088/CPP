@@ -1,3 +1,0 @@
-﻿  Application.cpp
-Application.obj : error LNK2019: 无法解析的外部符号 "void __cdecl engine::PrintMessage(void)" (?PrintMessage@engine@@YAXXZ)，函数 main 中引用了该符号
-D:\Unity资料和笔记\C++\CPP_Codes\Game\x64\Debug\Game.exe : fatal error LNK1120: 1 个无法解析的外部命令
