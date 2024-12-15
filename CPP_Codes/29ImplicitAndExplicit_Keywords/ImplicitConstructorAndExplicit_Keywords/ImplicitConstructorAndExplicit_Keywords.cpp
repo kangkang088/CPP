@@ -20,6 +20,7 @@ int main()
 {
 	//Entity a = "Cherno"; //不行，因为隐式转换只可以进行一次。
 	//Cherno是const char[] ，隐式转换为std::string，而std::string无法再通过Entity的构造函数进行隐式转换了
+	//char[] 和 char* 是一个东西，不存在隐式转换
 
 	Entity a = std::string("Cherno");
 

@@ -1,0 +1,3 @@
+﻿  CopyConstructor.cpp
+D:\OwnLearn\CPP\CPP_Codes\34CopyConstructor\CopyConstructor\CopyConstructor.cpp(71,24): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  CopyConstructor.vcxproj -> D:\OwnLearn\CPP\CPP_Codes\34CopyConstructor\x64\Debug\CopyConstructor.exe
