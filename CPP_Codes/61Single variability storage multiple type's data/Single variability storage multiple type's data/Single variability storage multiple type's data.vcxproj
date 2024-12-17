@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{bb3eb488-19e4-47bc-a4be-ae0b17d4129f}</ProjectGuid>
-    <RootNamespace>HowToProcessOPTIONALData</RootNamespace>
+    <ProjectGuid>{ed781009-a0ed-4edc-82db-a5f4541e206c}</ProjectGuid>
+    <RootNamespace>Singlevariabilitystoragemultipletypesdata</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -131,7 +131,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="HowToProcess OPTIONAL Data.cpp" />
+    <ClCompile Include="Single variability storage multiple type%27s data.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
