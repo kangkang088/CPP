@@ -1,0 +1,33 @@
+﻿  UseVectorToOptimizer.cpp
+D:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xmemory(700,103): warning C4244: “参数”: 从“_Ty”转换到“float”，可能丢失数据
+D:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xmemory(700,103): warning C4244:         with
+D:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xmemory(700,103): warning C4244:         [
+D:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xmemory(700,103): warning C4244:             _Ty=int
+D:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xmemory(700,103): warning C4244:         ]
+  (编译源文件“UseVectorToOptimizer.cpp”)
+      D:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xmemory(700,103):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\OwnLearn\CPP\CPP_Codes\37UseVectorToOptimizer\UseVectorToOptimizer\UseVectorToOptimizer.cpp(42,12):
+          查看对正在编译的函数 模板 实例化“void std::vector<Vertex,std::allocator<Vertex>>::emplace_back<int,int,int>(int &&,int &&,int &&)”的引用
+          D:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(858,24):
+          查看对正在编译的函数 模板 实例化“_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_one_at_back<int,int,int>(int &&,int &&,int &&)”的引用
+          with
+          [
+              _Ty=Vertex
+          ]
+          D:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(776,20):
+          查看对正在编译的函数 模板 实例化“_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_back_with_unused_capacity<int,int,int>(int &&,int &&,int &&)”的引用
+          with
+          [
+              _Ty=Vertex
+          ]
+          D:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(794,27):
+          查看对正在编译的函数 模板 实例化“void std::_Default_allocator_traits<_Alloc>::construct<_Ty,int,int,int>(_Alloc &,_Objty *const ,int &&,int &&,int &&)”的引用
+          with
+          [
+              _Alloc=std::allocator<Vertex>,
+              _Ty=Vertex,
+              _Objty=Vertex
+          ]
+  
+  UseVectorToOptimizer.vcxproj -> D:\OwnLearn\CPP\CPP_Codes\37UseVectorToOptimizer\UseVectorToOptimizer\x64\Debug\UseVectorToOptimizer.exe
